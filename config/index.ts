@@ -5,4 +5,4 @@ export const USDT_CONTRACT_ADDRESS = process.env.USDT_CONTRACT_ADDRESS || '';
 export const UNISWAP_CONTRACT_ADDRESS = process.env.UNISWAP_CONTRACT_ADDRESS || '';
 export const USDT_HOLDER_ADDRESS = process.env.USDT_HOLDER_ADDRESS || '';
 export const UNISWAP_ROUTER_ADDRESS = process.env.UNISWAP_ROUTER_ADDRESS || '';
-
+export const WETH_CONTRACT_ADDRESS = process.env.WETH_CONTRACT_ADDRESS || '';

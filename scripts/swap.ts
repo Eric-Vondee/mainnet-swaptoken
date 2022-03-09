@@ -1,6 +1,6 @@
 import { Signer } from "ethers";
 import { ethers, network } from "hardhat";
-import {USDT_CONTRACT_ADDRESS, UNISWAP_CONTRACT_ADDRESS, USDT_HOLDER_ADDRESS, UNISWAP_ROUTER_ADDRESS} from '../config/index';
+import {WETH_CONTRACT_ADDRESS, USDT_CONTRACT_ADDRESS, UNISWAP_CONTRACT_ADDRESS, USDT_HOLDER_ADDRESS, UNISWAP_ROUTER_ADDRESS} from '../config/index';
 
 
 async function swap() {
@@ -42,7 +42,7 @@ async function swap() {
     await router.swapExactTokensForTokens(
         amountIn,
         0, 
-        [usdtContractAddress, '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2', uniswapContractAddress],
+        [usdtContractAddress, WETH_CONTRACT_ADDRESS, uniswapContractAddress],
         usdtHolderAddress,
         1646908001
     )
